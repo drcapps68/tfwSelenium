@@ -1,10 +1,15 @@
-//Created by Dan Capps
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+ /* Dan Capps
+ * 5.26.18
+ * tfwSeleniumLaravel.java
+ * This program runs on a Selenium WebDriver test through Laravel via homestead.test
+ */
+
 
 public class tfwSeleniumLaravel {
     public static void main(String[] args) throws InterruptedException {
