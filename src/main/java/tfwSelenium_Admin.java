@@ -29,6 +29,13 @@ public class tfwSelenium_Admin {
         driver.findElement(By.name("logInButton")).click();
 
         driver.findElement(By.name("accountTab")).click();
-    }
 
+        driver.findElement(By.name("adminDashboardButton")).click();
+
+        //Add a user
+        driver.findElement(By.name("manageUsersButton")).click();
+        driver.findElement(By.name("addUserButton")).click();
+
+
+    }
 }
