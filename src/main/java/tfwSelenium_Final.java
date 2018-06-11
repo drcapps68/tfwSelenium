@@ -21,11 +21,11 @@ public class tfwSelenium_Final {
 
         //Enter Sign up fields
         //This will show an error because the name is already taken
-        driver.findElement(By.name("first_name")).sendKeys("Bruce");
+        driver.findElement(By.name("first_name")).sendKeys("Steve");
         Thread.sleep(2000);
-        driver.findElement(By.name("last_name")).sendKeys("Banner");
+        driver.findElement(By.name("last_name")).sendKeys("Rogers");
         Thread.sleep(2000);
-        driver.findElement(By.name("email")).sendKeys("hulk@mail.com");
+        driver.findElement(By.name("email")).sendKeys("cap@avengers.com");
         Thread.sleep(2000);
         driver.findElement(By.name("password")).sendKeys("password");
         Thread.sleep(2000);
@@ -40,7 +40,7 @@ public class tfwSelenium_Final {
         Thread.sleep(3000);
 
         //Enter Log in fields
-        driver.findElement(By.name("email")).sendKeys("hulk@mail.com");
+        driver.findElement(By.name("email")).sendKeys("cap@avengers.com");
         Thread.sleep(1000);
         driver.findElement(By.name("password")).sendKeys("password");
         Thread.sleep(1000);
