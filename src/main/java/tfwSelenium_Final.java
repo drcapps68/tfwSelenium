@@ -21,32 +21,41 @@ public class tfwSelenium_Final {
 
         //Enter Sign up fields
         //This will show an error because the name is already taken
-        driver.findElement(By.name("first_name")).sendKeys("Robbie");
+        driver.findElement(By.name("first_name")).sendKeys("Bruce");
         Thread.sleep(2000);
-        driver.findElement(By.name("last_name")).sendKeys("D'Robot");
+        driver.findElement(By.name("last_name")).sendKeys("Banner");
         Thread.sleep(2000);
-        driver.findElement(By.name("email")).sendKeys("droid@mail.com");
+        driver.findElement(By.name("email")).sendKeys("hulk@mail.com");
         Thread.sleep(2000);
-        driver.findElement(By.name("password")).sendKeys("notstark");
+        driver.findElement(By.name("password")).sendKeys("password");
         Thread.sleep(2000);
-        driver.findElement(By.name("password_confirmation")).sendKeys("notstark");
+        driver.findElement(By.name("password_confirmation")).sendKeys("password");
         Thread.sleep(2000);
         driver.findElement(By.name("submitButton")).click();
         Thread.sleep(5000);
 
         //Enter Log in fields
-        driver.findElement(By.name("email")).sendKeys("webmaster@thefittestwarrior.com");
+        //Activate login window
+        driver.findElement(By.name("logInWindowButton")).click();
+        Thread.sleep(3000);
+
+        //Enter Log in fields
+        driver.findElement(By.name("email")).sendKeys("hulk@mail.com");
+        Thread.sleep(1000);
         driver.findElement(By.name("password")).sendKeys("password");
+        Thread.sleep(1000);
         driver.findElement(By.name("remember")).click();
+        Thread.sleep(1000);
         driver.findElement(By.name("logInButton")).click();
+        Thread.sleep(5000);
+
+        //Go to Main Page
+        driver.findElement(By.className("navbar-brand")).click();
+        Thread.sleep(3000);
 
         driver.findElement(By.name("accountTab")).click();
 
-        driver.findElement(By.name("adminDashboardButton")).click();
 
-        //Add a user
-        driver.findElement(By.name("manageUsersButton")).click();
-        driver.findElement(By.name("addUserButton")).click();
 
 
     }
