@@ -32,7 +32,7 @@ public class tfwSelenium_Final {
         driver.findElement(By.name("password_confirmation")).sendKeys("password");
         Thread.sleep(2000);
         driver.findElement(By.name("submitButton")).click();
-        Thread.sleep(5000);
+        Thread.sleep(4000);
 
         //Enter Log in fields
         //Activate login window
